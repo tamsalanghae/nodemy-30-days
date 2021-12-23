@@ -1,0 +1,76 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: aquamarine;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image{
+    width: 22%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.image img:hover{
+    transform: scale(1.5);
+}
+
+.gallery{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.close{
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    font-size: 40px;
+}
+.control{
+    font-size: 40px;
+    position: absolute;
+}
+.control.prev{
+    left: 40px;
+}
+.control.next{
+    right: 40px;
+}
+.gallery__inner{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+}
