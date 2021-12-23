@@ -1,34 +1,91 @@
 /* import font */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Quicksand:wght@300;400;500;600&display=swap');
-:root{
-    --primary-color: #f2726a;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Quicksand:wght@300;400;500;600&display=swap");
+:root {
+  --primary-color: #f2726a;
 }
 
 /* reset css */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    height: 100vh;
-    font-family: 'Quicksand', sans-serif;
-    background-image: linear-gradient(to right, #3d8880, #4daf54);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  background-image: linear-gradient(to right, #3d8880, #4daf54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card{
-    background-color: #272d40;
-    width: 350px;
-    height: 420px;
-    border-radius: 12px;
+.card {
+  background-color: #272d40;
+  width: 320px;
+  height: 420px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  transition: 0.3s;
+  margin: auto 20px;
 }
-.card__img{
-    width: 120px;
-    height: 120px;
-    border: 4px solid var(--primary-color);
-    border-radius: 50%;
+.card__img {
+  width: 120px;
+  height: 120px;
+  border: 4px solid var(--primary-color);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  transform: translateY(25px);
+  transition: 0.3s;
+}
+.card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card h2 {
+  margin-top: 40px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.card__social {
+  margin: 20px 0;
+}
+.card__social a {
+  color: white;
+  margin: 15px;
+  transition: 0.3s;
+  font-size: 23px;
+}
+.card__social a:hover {
+  color: var(--primary-color);
+}
+.card p {
+  color: var(--primary-color);
+}
+.card button {
+  margin-top: 20px;
+  padding: 15px 40px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.card button:hover {
+  background: var(--primary-color);
+}
+.card__img:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: unset;
+  object-fit: cover;
+  border: unset;
+  transform: unset;
+  border-radius: 10px;
 }
