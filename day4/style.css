@@ -48,6 +48,10 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: 0,5;
 }
 
 .close{
@@ -70,7 +74,16 @@ body{
     width: 70%;
     height: 70%;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 20%;
+    left: 30%;
     transform: translate(-20%, -50%);
+}
+
+.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+.hide{
+    display: none;
 }
